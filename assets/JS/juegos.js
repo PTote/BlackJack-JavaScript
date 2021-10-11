@@ -23,6 +23,8 @@
   const divCartasJugador = document.querySelector("#jugador-cartas");
   const divCartasComputadora = document.querySelector("#computadora-cartas");
 
+  const inicializarJuego = ()=>{ deck=crearDeck() }; // inicializa el juego
+
   //Esta función crear una nueva baraja o deck de cartas
   const crearDeck = () => {
     for (let i = 2; i <= 10; i++) {
@@ -152,5 +154,8 @@
     btnDetener.disabled = false;
   });
 
-  crearDeck();
+  
+
+  
+
 })();
